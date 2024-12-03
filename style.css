@@ -1,0 +1,135 @@
+
+/* Remove all default paddings and margins */
+  * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    /* default colors and fonts are set here */
+    body {
+      background-color: hsl(30, 54%, 90%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: "Outfit", serif;
+      font-size: 16px;
+      color: hsl(14, 45%, 36%);
+    }
+
+    /*container for all the recipe items*/
+    .container {
+      max-width: 43em;
+      background-color: white;
+      padding: 2em;
+      border-radius: 1em;
+    }
+
+    /*Name of each step in the pre-time and the instructions grid, make it bold */
+    .step-name {
+      font-weight: bold;
+    }
+
+    /*Make top image fit in the div*/
+    .title-image {
+      width: 100%;
+      border-radius: 0.5em;
+    }
+
+    /* Preparation time div 
+     has a different background color from the rest of the divs */
+    .prep-time {
+      background-color: hsl(330, 100%, 98%);
+      padding: 2em;
+      margin-top: 1.5em;  
+      border-radius: 1em;    
+    }
+
+    /*Preparation time heading has a special color */
+    .prep-time > h3 {
+      color: hsl(332, 51%, 32%);
+    }
+
+    /*Put some space at the top and bottom of the recipe title
+    Also, the recipe title has a special color*/
+    .main-heading {
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+      color: hsl(24, 5%, 18%);
+    }
+
+    /* The main title and the headings of each section have a different font from the rest of the body */
+    .main-heading,
+    .section-heading {
+      font-family: "Young Serif", serif;
+      font-weight: 400;
+    }
+
+    /* Put some space at the top and bottom of each list in the sections */
+    .prep-time-list,
+    .ingredients-list,
+    .instructions-list {
+      margin-top: 1em;
+      margin-left: 1.5em;
+    }
+
+    /* Put some spaceings around the divs at the top */
+    .ingredients {
+      margin-top: 1em;
+    }
+
+    .instructions {
+      margin-top: 1em;
+      margin-bottom: 2em;
+    }
+
+    .nutrition {
+      margin-top: 1em;
+    }
+
+    /*Give each list item space at the top to space them apart */
+    .prep-time-list >li,
+    .ingredients-list >li,
+    .instructions-list >li     {
+      margin-top: 0.5em;
+    }
+
+    .nutrition-description {
+      margin-top: 1em;
+      margin-bottom: 1.5em;
+    }
+
+    /*Put the items inside the nutrition section in a flexbox so that they can be 
+    space correctly*/
+    .nutrition-flex-container {
+      margin-top: 0.5em;
+      display: flex;
+    }
+
+
+    /*Formatting for numeric value of the nutrition list*/
+    .nutrition-item-value {
+      font-weight: bold;
+      margin-left: 5em;
+      text-align: left;
+    }
+
+    /*Name of the nutrition item. Give it some width so that the numeric value to the right can be all aligned to each other*/
+    .nutrition-item-name {
+      width: 16em;
+      padding-left: 2em;
+    }
+
+
+    .solid {
+      margin-top: 1em;
+      border-top: 1px solid #bbb;
+    }
+
+/*Put some space between the bullets and the numbers and the text in the list */
+li p {
+  margin-left: 1em;
+}
+
+.attribution { font-size: 11px; text-align: center; margin-top: 5em; margin-bottom: 5em}
+.attribution a { color: hsl(228, 45%, 44%); }
