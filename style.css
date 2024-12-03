@@ -14,15 +14,23 @@
       align-items: center;
       font-family: "Outfit", serif;
       font-size: 16px;
-      color: hsl(14, 45%, 36%);
+      color: hsl(30, 10%, 34%);
     }
 
     /*container for all the recipe items*/
     .container {
-      max-width: 43em;
+      max-width: 750px;
+      margin-inline: auto;
       background-color: white;
-      padding: 2em;
       border-radius: 1em;
+    }
+
+    .container section {
+      padding: 1.5rem;
+    }
+
+    section {
+      padding: 1.5rem;
     }
 
     /*Name of each step in the pre-time and the instructions grid, make it bold */
@@ -32,7 +40,7 @@
 
     /*Make top image fit in the div*/
     .title-image {
-      width: 100%;
+      max-width: 100%;
       border-radius: 0.5em;
     }
 
@@ -46,11 +54,20 @@
     }
 
     /*Preparation time heading has a special color */
-    .prep-time > h3 {
+    .prep-time h3 {
       color: hsl(332, 51%, 32%);
     }
 
-    /*Put some space at the top and bottom of the recipe title
+
+    /* The main title and the headings of each section have a different font from the rest of the body */
+    .main-heading,
+    .section-heading {
+      font-family: "Young Serif", serif;
+      font-weight: 400;
+      color: hsl(14, 45%, 36%);
+    }
+
+        /*Put some space at the top and bottom of the recipe title
     Also, the recipe title has a special color*/
     .main-heading {
       margin-top: 0.5em;
@@ -58,12 +75,6 @@
       color: hsl(24, 5%, 18%);
     }
 
-    /* The main title and the headings of each section have a different font from the rest of the body */
-    .main-heading,
-    .section-heading {
-      font-family: "Young Serif", serif;
-      font-weight: 400;
-    }
 
     /* Put some space at the top and bottom of each list in the sections */
     .prep-time-list,
@@ -88,9 +99,9 @@
     }
 
     /*Give each list item space at the top to space them apart */
-    .prep-time-list >li,
-    .ingredients-list >li,
-    .instructions-list >li     {
+    .prep-time-list li,
+    .ingredients-list li,
+    .instructions-list li {
       margin-top: 0.5em;
     }
 
@@ -112,6 +123,7 @@
       font-weight: bold;
       margin-left: 5em;
       text-align: left;
+      color: hsl(14, 45%, 36%);
     }
 
     /*Name of the nutrition item. Give it some width so that the numeric value to the right can be all aligned to each other*/
@@ -129,6 +141,15 @@
 /*Put some space between the bullets and the numbers and the text in the list */
 li p {
   margin-left: 1em;
+}
+
+@media (min-width: 800px) {
+  .container {
+    padding: 2em;
+    margin-top: 7em;
+    margin-bottom: 7em;
+  }  
+
 }
 
 .attribution { font-size: 11px; text-align: center; margin-top: 5em; margin-bottom: 5em}
